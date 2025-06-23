@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+body{
+    background-color: rgb(255, 237, 212);
+    font-size: 1.2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: 600px;
+    margin: 60px;
+}
+
+/*Navigation bar*/
+.navbar{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: static;
+}
+
+/*Menu items>list*/
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-weight: 400;
+}
+
+/*Menu items>list>text*/
+.navbar ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/*Menu items and list hover*/
+.navbar ul li a:hover{
+    color: #000304;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+
+h1{
+text-align: center;
+font-size: 4rem;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-bottom: 1.5rem;
+text-shadow: 2px 2px 4px rgb(0, 0, 0);
+} 
+
+.lookbook {
+    padding: 50px;
+    background: #000000;
+    text-align: center;
+  }
+
+   h2 {
+    font-size: 4rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);}
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+
+  .look {
+    width: 250px;
+  }
+
+  .look img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 2px 5px 20px rgba(255, 255, 255);
+    transition: transform 0.3s ease;
+  }
+
+  .look img:hover {
+    transform: scale(1.05);
+  }
+
+  .look p {
+    margin-top: 10px;
+    font-style: italic;
+    color: #ffffff;
+  }
+
+  .look video{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 2px 5px 20px rgba(255,255,255);
+    transition: transform 0.3s ease;
+  }

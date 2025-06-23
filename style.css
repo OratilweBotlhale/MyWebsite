@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+body{
+    background-color: rgb(255, 237, 212);
+    font-size: 1.2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: 600px;
+    margin: 60px;
+}
+
+    /*Navigation bar*/
+    .navbar{
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        position: static;
+    }
+    
+    /*Menu items>list*/
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+        font-weight: 400;
+    }
+    
+    /*Menu items>list>text*/
+    .navbar ul li a{
+        text-decoration: none;
+        color: #000000;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 500;
+    }
+    
+    /*Menu items and list hover*/
+    .navbar ul li a:hover{
+        color: #000304;
+    }
+    
+    .navbar ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #000000;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+    }
+    
+    .navbar ul li:hover::after{
+        width: 100%;
+        transition: 0.5s;
+    }
+    
+
+.h1{
+justify-content: left;
+text-align: center;
+display: flex;
+}
+
+.p{
+justify-content: left;
+align-items: flex-start;
+}
+
+.profile-image{
+    width: 300px;
+    height: 600px;
+    align-self:flex-end;
+    position: relative;
+    align-self:right;
+    justify-items: right;
+    float: right;
+}
+
+.socials .Icon-button {
+    margin-top: 2rem;
+    margin-right: 20px;
+    text-decoration: none;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(255, 254, 254, 0.452);
+    transition: all 0.3s ease-out;
+    margin-bottom: 2rem;
+}
+
+.socials .Icon-button:hover {
+    width: 200px;
+}
+
+.socials .Icon-button .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    color: #000;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.socials .Icon-button:nth-child(1):hover .icon {
+    background: #4267B2;
+}
+
+.socials .Icon-button:nth-child(2):hover .icon {
+    background: #1DA1F2;
+}
+
+.socials .Icon-button:nth-child(3):hover .icon {
+    background: #E1306C;
+}
+
+.socials .Icon-button:nth-child(4):hover .icon {
+    background: #ff0000;
+}
+
+.socials .Icon-button:nth-child(5):hover .icon {
+    background: #0616f5;
+}
+
+
+.socials .Icon-button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.socials .Icon-button:hover .icon i {
+    color: #fff;
+}
+
+.socials .Icon-button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.socials .Icon-button:nth-child(1) span {
+    color: #4267B2;
+}
+
+.socials .Icon-button:nth-child(2) span {
+    color: #1DA1F2;
+}
+
+.socials .Icon-button:nth-child(3) span {
+    color: #E1306C;
+}
+
+.socials .Icon-button:nth-child(4) span {
+    color: #ff0000;
+}
+
+.socials .Icon-button:nth-child(5) span {
+    color: #0616f5;
+}
