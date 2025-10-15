@@ -6,11 +6,20 @@
 }
 
 body{
-    background-color: rgb(255, 237, 212);
     font-size: 1.2rem;
     font-family:Georgia, 'Times New Roman', Times, serif;
     border: 600px;
     margin: 60px;
+    background: linear-gradient(270deg, #000000, #1e1e1e, hsl(300, 27%, 10%), #40173c, #3c1f4e);
+    background-size: 1000% 1000%;
+    animation: gradientMove 20s ease infinite;
+    color: #ffffff;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 /*Navigation bar*/
 .navbar{
@@ -33,7 +42,7 @@ body{
 /*Menu items>list>text*/
 .navbar ul li a{
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-size: 20px;
     font-style: italic;
     font-weight: 500;
@@ -41,14 +50,14 @@ body{
 
 /*Menu items and list hover*/
 .navbar ul li a:hover{
-    color: #000304;
+    color: #ffffff;
 }
 
 .navbar ul li::after{
     content: '';
     height: 3px;
     width: 0;
-    background: #000000;
+    background: #ffffff;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -60,13 +69,25 @@ body{
 }
 
 h1{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 4rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.995);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.995);
     } 
+
+    p{
+font-size: 1.3rem;
+    }
+
+    .look video{
+      width: 50%;
+      height: 40%;
+      border-radius: 15px;
+      box-shadow: 2px 5px 20px rgba(255,255,255);
+      transition: transform 0.3s ease;
+    }
 
     .profile-image{
         width: 300px;
@@ -134,16 +155,18 @@ h1{
 
       .faith-section {
         background-color: #000000;
-        padding: 60px 30px;
+        padding: 40px 20px;
         text-align: center;
         color: #ffffff;
         font-family: 'Georgia', serif;
+        border-radius: 15rem;
       }
       
       .faith-section h2 {
         font-size: 2.5rem;
         margin-bottom: 15px;
-        color: #a64ca6;
+        color: #ff4ba8;
+        
       }
       
       .faith-section .intro {
@@ -156,21 +179,23 @@ h1{
         max-width: 700px;
         margin: 0 auto;
         text-align: left;
-      }
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.995);
+    } 
+      
       
       .faith-content blockquote {
         font-size: 1.3rem;
         font-weight: bold;
-        color: #6a0dad;
+        color: #ef2493;
         margin-bottom: 20px;
-        border-left: 4px solid #d2a8f9;
+        border-left: 4px solid #ffffff;
         padding-left: 15px;
       }
       
       .faith-content .verse {
         display: block;
         font-size: 0.9rem;
-        color: #888;
+        color: #ffffff;
         margin-top: 5px;
       }
       
@@ -180,5 +205,38 @@ h1{
         font-size: 1rem;
       }
       
+      .image-row {
+        display: flex;          /* Makes children align in a row */
+        gap: 30px;              /* Space between images */
+        flex-wrap: wrap;        /* Wrap to next line on small screens */
+        justify-content: center;/* Center the images horizontally */
+      }
       
+      .image-row img {
+        width: 150px;           /* Adjust size as needed */
+        border-radius: 10px;    /* Rounded corners optional */
+      }
       
+      .imagerow {
+        display: flex;          /* Makes children align in a row */
+        gap: 30px;              /* Space between images */
+        flex-wrap: wrap;        /* Wrap to next line on small screens */
+        justify-content: center;/* Center the images horizontally */
+      }
+      
+      .imagerow video {
+        width: 700px; 
+        height: 400px;          /* Adjust size as needed */
+        border-radius: 10px;    /* Rounded corners optional */
+      }
+      .image-row1 {
+        display: flex;          /* Makes children align in a row */
+        gap: 30px;              /* Space between images */
+        flex-wrap: wrap;        /* Wrap to next line on small screens */
+        justify-content: center;/* Center the images horizontally */
+      }
+      
+      .image-row1 img {
+        width: 300px;           /* Adjust size as needed */
+        border-radius: 10px;    /* Rounded corners optional */
+      }
